@@ -1,0 +1,8 @@
+services:
+  - type: cron
+    name: crisp-escalado
+    schedule: "*/5 * * * *"
+    command: "python cron.py"
+    branch: main
+    runtime: python
+    region: frankfurt
